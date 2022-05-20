@@ -1,0 +1,1 @@
+# stickerface-android-sdk
