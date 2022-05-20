@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Example Stickerface SDK</string>
+    <string name="get_sticker">Get sticker</string>
+    <string name="not_selected">Not selected</string>
+</resources>
