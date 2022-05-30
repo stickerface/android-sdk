@@ -5,7 +5,7 @@
 ### 1. Add dependency
 
 ```groovy
-implementation 'io.stickerface:sdk:1.0.1'
+implementation 'io.stickerface:sdk:1.0.2'
 ```
 
 ### 2. Initialize Stickerface
