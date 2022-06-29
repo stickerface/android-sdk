@@ -5,50 +5,20 @@
 ### 1. Add dependency
 
 ```groovy
-implementation 'io.stickerface:sdk:1.0.2'
+implementation 'io.stickerface:sdk:1.0.3'
 ```
 
-### 2. Initialize Stickerface
-
-```kotlin
-class MyApplication: Application() {
-    override fun onCreate() {
-        super.onCreate()
-        StickerFace.init(this)
-    }
-}
-```
-
-*NOTE: Add you application class in `AndroidManifest.xml` and add `android.permission.INTERNET`, `android.permission.CAMERA` in permission*
+### 2. Add Stickerface initializer to manifest
 
 ```xml
-<manifest>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <application
-      android:name=".MyApplication"
-      >
-    </application>
-</manifest>
+ <provider
+    android:name="io.stickerface.sdk.StickerFaceInitializer"
+    android:authorities="${applicationId}.stickerface.provider"
+    android:exported="false" />
 ```
 
-or you can initialize Stickerface in activity
+*NOTE: Add you application in `AndroidManifest.xml` and add `android.permission.INTERNET`, `android.permission.CAMERA` in permission*
 
-```kotlin
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        StickerFace.init(this)
-        setContentView(R.layout.activity_main)
-    }
-    
-    override fun onDestroy() {
-        super.onDestroy()
-        StickerFace.deInitialize()
-    }
-}
-```
 
 ### 3. Register activity for result
 

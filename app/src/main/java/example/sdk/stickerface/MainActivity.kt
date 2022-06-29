@@ -2,10 +2,8 @@ package example.sdk.stickerface
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.Toast
-import io.stickerface.sdk.StickerFace
 import io.stickerface.sdk.result.StickerFaceForResult
 import io.stickerface.sdk.result.StickerFaceParams
 import io.stickerface.sdk.widget.StickerFaceView
