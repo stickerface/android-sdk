@@ -35,5 +35,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation 'io.stickerface:sdk:1.0.3'
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+
+    implementation 'io.stickerface:sdk:1.1.1'
+    implementation 'io.stickerface:fresco:0.0.1'
 }

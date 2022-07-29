@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Example Stickerface SDK</string>
+    <string name="stickerface_example_layers">0;1;11;13;23;28;68;69;72;83;91;119;125;159;160;187;219;238;253;265;310;337;3000;3220</string>
     <string name="get_sticker">Get sticker</string>
     <string name="not_selected">Not selected</string>
+    <string name="example">Example:</string>
+    <string name="fresco_example">Example for Fresco:</string>
+    <string name="editor">Editor</string>
+
 </resources>
